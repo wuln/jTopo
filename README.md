@@ -1,2 +1,3 @@
 # jTopo
-draw the network topology by javascript
+draw the network topology with javascript
+based on canvas
