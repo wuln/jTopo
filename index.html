@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link href="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css">     
+    <script type="text/javascript" src="js/jtopo-min.js"></script>
+    <script type="text/javascript" src="js/toolbar.js"></script>      
+    <link href="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <ul id="contextmenu" style="display: none;">  
+      <li><a>顺时针旋转</a></li>
+      <li><a>逆时针旋转</a></li> 
+      <li><a>放大</a></li>
+      <li><a>缩小</a></li>
+      <li><a>前往机器管理平台</a></li>  
+      <li><a>节点详情</a></li> 
+      <li><a>编辑节点</a></li>       
+      <li><a>删除该节点</a></li>
+    </ul>
+    <ul id="linemenu" style="display: none;">        
+      <li><a>删除该连线</a></li>
+    </ul>
+    <ul id="detail" style="display:none;background-color :#d3d3d3;"></ul>
+    <div class="container">
+      <div id="content">
+        <div class="row clearfix">
+          <div class="span2">                                                 
+            <div class="coms" id="components">                                                  
+              <div class="component" title="exchanger" trigger="manual">                                       
+                <a class=" icon exchanger"></a>      
+              </div>
+              <div class="component" title="server" trigger="manual">                                                       
+                <a class=" icon server"></a>           
+              </div>
+              <div class="component" title="subnetwork" trigger="manual">                                       
+                <a class=" icon subnetwork"></a>              
+              </div>
+              <div class="component" title="node" trigger="manual">                             
+                <a class=" icon node"></a>                       
+              </div>  
+              <div class="linkline" title="greenline" trigger="manual">                                                       
+                <span class=" line greenline" id='1'></span>           
+              </div>
+              <div class="linkline" title="orangeline" trigger="manual">                                       
+                <span class=" line orangeline" id='2'></span>              
+              </div>
+              <div class="linkline" title="redline" trigger="manual">                             
+                <span class=" line redline" id='3'></span>                       
+              </div>                                       
+            </div>
+          </div>
+          <div class="span10">  
+            <canvas width="850" height="400" id="target"></canvas>  
+                                 
+          </div>
+        </div> <!-- row -->               
+      </div> <!-- /content -->              
+    </div> <!-- /container -->
+    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/bootstrap.min.js"></script>
+    <script src="js/com.js"></script>
+  </body>
+</html>
